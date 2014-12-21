@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Shiny Temperature Converter</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Simple Shiny Temperature Converter">
+  <meta name="author" content="">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Simple Shiny Temperature Converter</h1>
+    <h2>For coursera class Developing Data Product</h2>
+    <p><br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Temperature Converter</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Created a temperature converter by using shiny</li>
+<li>Formula</li>
+<li>Source Code</li>
+<li>Publish to shiny server</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Formula</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Below is the forumla that converts temperature from Celsius to Fahrenheit:</p>
+
+<pre><code class="r"># function
+celsiusToFahrenheit &lt;- function(inval) (inval * 9 / 5) + 32
+# test it
+celsiusToFahrenheit(32)
+</code></pre>
+
+<pre><code>## [1] 89.6
+</code></pre>
+
+<p>The forumla that converts temperature from Fahrenheit to Celsius:</p>
+
+<pre><code class="r"># function
+fahrenheitToCelsius &lt;- function(inval) (inval - 32) * 5 / 9
+# test it
+fahrenheitToCelsius(0)
+</code></pre>
+
+<pre><code>## [1] -17.78
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Source Code</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>ui.R defines the display, including inputs, outputs and other controls</li>
+<li>server.R defines the temperature conversion functions and does the calculation</li>
+<li>Complete source code an github <a href="https://github.com/hkzhao/FirstShiny">https://github.com/hkzhao/FirstShiny</a></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Publish to shiny server</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Here are the steps to publish it to shiny server:</p>
+
+<ol>
+<li>Make sure you have devtools installed in R</li>
+<li>Install shinyapps: devtools::install_github(&#39;rstudio/shinyapps&#39;)</li>
+<li>Create a ShinyApps.io account</li>
+<li>Configure shinyapps</li>
+<li>Detailed instruction: <a href="http://shiny.rstudio.com/articles/shinyapps.html">http://shiny.rstudio.com/articles/shinyapps.html</a></li>
+<li>The finished shiny server path: <a href="https://hkshiny.shinyapps.io/project/">https://hkshiny.shinyapps.io/project/</a></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Temperature Converter'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Formula'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Source Code'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Publish to shiny server'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
